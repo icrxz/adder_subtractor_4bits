@@ -1,0 +1,99 @@
+----------------------------------------------------------------------------------
+-- Faculdade de Tecnologia Termomecanica
+--
+-- Nome: Gabriel Teixeira - 081170023
+-- Nome: Igor Cruz - 081170008
+-- Nome: João Marcos - 081170036
+--
+-- Professor
+-- Nome: Filippo Valiante Filho
+-- Disciplina: Arquitetura de Computadores II
+--
+-- Data de criação: 20/09/2020 
+-- Nome do módulo: adder_subtractor_4bits
+-- Nome do projeto: adder_subtracter_4bits
+-- Dispositivo: Altera Cyclone IV EP4CE6E22C8
+--
+----------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity adder_subtractor_4bits is
+    port (
+			nums : in  STD_LOGIC_VECTOR (3 downto 0);
+			clock : in  STD_LOGIC;           
+         clear : in  STD_LOGIC;
+			en1 : in  STD_LOGIC;
+         en2 : in  STD_LOGIC;
+			show_res: in STD_LOGIC;
+			ope: in STD_LOGIC;
+         disp : out  STD_LOGIC_VECTOR (6 downto 0)
+			);
+end entity;
+
+architecture Behavioral of adder_subtractor_4bits is
+
+component reg
+	port	(
+			D_IN: in std_logic_vector (3 downto 0);
+			CLK: in std_logic;
+			SAVE_VAL: in std_logic;
+			CLR: in std_logic;
+			Q_OUT: out std_logic_vector (3 downto 0)
+			);
+end component;
+
+component display_7seg
+	port	(
+			INPUT: in std_logic_vector (3 downto 0):= "0000";
+			SHOW: in std_logic;
+			DISPLAY: out std_logic_vector (6 downto 0)
+			);
+end component;
+
+component arithmetic
+	port	(
+			IN_1: in std_logic_vector (3 downto 0);
+			IN_2: in std_logic_vector (3 downto 0);
+			OPERATION: in std_logic;
+			RESULT_OUT: out std_logic_vector (3 downto 0)
+			);
+end component;
+	
+	signal Q_OUT_R1 : std_logic_vector (3 downto 0);
+	signal Q_OUT_R2 : std_logic_vector (3 downto 0);
+	signal Q_RESULT_OUT : std_logic_vector (3 downto 0);
+	
+begin
+
+	R1: reg port map (
+		D_IN => nums,
+		CLK => clock,
+		SAVE_VAL => en1,
+		CLR => clear,
+		Q_OUT => Q_OUT_R1
+	);
+	
+	R2: reg port map (
+		D_IN => nums,
+		CLK => clock,
+		SAVE_VAL => en2,
+		CLR => clear,
+		Q_OUT => Q_OUT_R2
+	);
+	
+	arithmetic1: arithmetic port map (
+		IN_1 => Q_OUT_R1,
+		IN_2 => Q_OUT_R2,
+		RESULT_OUT => Q_RESULT_OUT,
+		OPERATION => ope
+	);
+		
+	display : display_7seg port map (
+		INPUT => Q_RESULT_OUT,
+		DISPLAY => disp,
+		SHOW => show_res
+	);	
+
+end Behavioral;

@@ -1,0 +1,107 @@
+# Reading pref.tcl
+# do adder_subtractor_4bits_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying D:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {E:/Faculdade/8Sem/Arquitetura 2/Projetos/Quartus/adder_subtractor_4bits/display_7seg.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:43:36 on Sep 25,2020
+# vcom -reportprogress 300 -93 -work work E:/Faculdade/8Sem/Arquitetura 2/Projetos/Quartus/adder_subtractor_4bits/display_7seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity display_7seg
+# -- Compiling architecture Behavioral of display_7seg
+# End time: 20:43:36 on Sep 25,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/Faculdade/8Sem/Arquitetura 2/Projetos/Quartus/adder_subtractor_4bits/reg.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:43:36 on Sep 25,2020
+# vcom -reportprogress 300 -93 -work work E:/Faculdade/8Sem/Arquitetura 2/Projetos/Quartus/adder_subtractor_4bits/reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg
+# -- Compiling architecture Behavioral of reg
+# End time: 20:43:36 on Sep 25,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/Faculdade/8Sem/Arquitetura 2/Projetos/Quartus/adder_subtractor_4bits/adder_subtractor_4bits.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:43:36 on Sep 25,2020
+# vcom -reportprogress 300 -93 -work work E:/Faculdade/8Sem/Arquitetura 2/Projetos/Quartus/adder_subtractor_4bits/adder_subtractor_4bits.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity adder_subtractor_4bits
+# -- Compiling architecture Behavioral of adder_subtractor_4bits
+# End time: 20:43:36 on Sep 25,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {E:/Faculdade/8Sem/Arquitetura 2/Projetos/Quartus/adder_subtractor_4bits/arithmetic.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:43:36 on Sep 25,2020
+# vcom -reportprogress 300 -93 -work work E:/Faculdade/8Sem/Arquitetura 2/Projetos/Quartus/adder_subtractor_4bits/arithmetic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity arithmetic
+# -- Compiling architecture Behavioral of arithmetic
+# End time: 20:43:37 on Sep 25,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+vsim work.adder_subtractor_4bits
+# vsim work.adder_subtractor_4bits 
+# Start time: 20:43:47 on Sep 25,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.adder_subtractor_4bits(behavioral)
+# Loading work.reg(behavioral)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.arithmetic(behavioral)
+# Loading work.display_7seg(behavioral)
+add wave -position insertpoint  \
+sim:/adder_subtractor_4bits/nums \
+sim:/adder_subtractor_4bits/clock \
+sim:/adder_subtractor_4bits/clear \
+sim:/adder_subtractor_4bits/en1 \
+sim:/adder_subtractor_4bits/en2 \
+sim:/adder_subtractor_4bits/show_res \
+sim:/adder_subtractor_4bits/ope \
+sim:/adder_subtractor_4bits/disp \
+sim:/adder_subtractor_4bits/Q_OUT_R1 \
+sim:/adder_subtractor_4bits/Q_OUT_R2 \
+sim:/adder_subtractor_4bits/Q_RESULT_OUT
+force -freeze sim:/adder_subtractor_4bits/nums 0100 0
+force -freeze sim:/adder_subtractor_4bits/clock 1 0, 0 {50 ps} -r 100
+force -freeze sim:/adder_subtractor_4bits/clear U 0
+force -freeze sim:/adder_subtractor_4bits/clear 0 0
+force -freeze sim:/adder_subtractor_4bits/en1 1 0
+force -freeze sim:/adder_subtractor_4bits/en2 0 0
+force -freeze sim:/adder_subtractor_4bits/ope 0 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /adder_subtractor_4bits/arithmetic1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /adder_subtractor_4bits/arithmetic1
+force -freeze sim:/adder_subtractor_4bits/en1 0 0
+force -freeze sim:/adder_subtractor_4bits/nums 0110 0
+force -freeze sim:/adder_subtractor_4bits/en2 1 0
+run
+force -freeze sim:/adder_subtractor_4bits/en2 0 0
+force -freeze sim:/adder_subtractor_4bits/show_res 1 0
+run
+# End time: 20:54:40 on Sep 25,2020, Elapsed time: 0:10:53
+# Errors: 0, Warnings: 2

@@ -1,0 +1,35 @@
+----------------------------------------------------------------------------------
+-- Faculdade de Tecnologia Termomecanica
+--
+-- Nome: Gabriel Teixeira - 081170023
+-- Nome: Igor Cruz - 081170008
+-- Nome: João Marcos - 081170036
+--
+-- Professor
+-- Nome: Filippo Valiante Filho
+-- Disciplina: Arquitetura de Computadores II
+--
+-- Data de criação: 13/09/2020 
+-- Nome do módulo: Adder
+-- Nome do projeto: adder_subtracter_4bits
+-- Dispositivo: Altera Cyclone IV EP4CE6E22C8
+--
+----------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.all;
+use IEEE.NUMERIC_STD.ALL;
+
+entity Adder is
+    Port (
+			in_1: in std_logic_vector (3 downto 0);
+			in_2: in std_logic_vector (3 downto 0);
+			result_out: out std_logic_vector (3 downto 0)
+			);
+end entity;
+
+architecture Behavioral of Adder is
+
+begin
+  result_out <= in_1 + in_2;
+end Behavioral;

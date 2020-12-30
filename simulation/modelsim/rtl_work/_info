@@ -1,0 +1,183 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Faculdade/8Sem/Arquitetura 2/Projetos/Quartus/adder_subtractor_4bits/simulation/modelsim
+Eadder_subtractor_4bits
+Z1 w1601077168
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 2
+R0
+Z5 8E:/Faculdade/8Sem/Arquitetura 2/Projetos/Quartus/adder_subtractor_4bits/adder_subtractor_4bits.vhd
+Z6 FE:/Faculdade/8Sem/Arquitetura 2/Projetos/Quartus/adder_subtractor_4bits/adder_subtractor_4bits.vhd
+l0
+L22 1
+VJ^bEd4GaJ@QRj_Am6mF940
+!s100 P5mWA^5SJM[ESbOkW?W082
+Z7 OV;C;2020.1;71
+31
+Z8 !s110 1601077416
+!i10b 1
+Z9 !s108 1601077416.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|E:/Faculdade/8Sem/Arquitetura 2/Projetos/Quartus/adder_subtractor_4bits/adder_subtractor_4bits.vhd|
+Z11 !s107 E:/Faculdade/8Sem/Arquitetura 2/Projetos/Quartus/adder_subtractor_4bits/adder_subtractor_4bits.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+R4
+DEx4 work 22 adder_subtractor_4bits 0 22 J^bEd4GaJ@QRj_Am6mF940
+!i122 2
+l68
+L35 65
+VVDYi7j>nb<8g7]Yb`z:mZ1
+!s100 NO>[76[K@[Ff>:FcbZ5J=2
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Earithmetic
+Z14 w1601076208
+R2
+Z15 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z16 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R3
+R4
+!i122 3
+R0
+Z17 8E:/Faculdade/8Sem/Arquitetura 2/Projetos/Quartus/adder_subtractor_4bits/arithmetic.vhd
+Z18 FE:/Faculdade/8Sem/Arquitetura 2/Projetos/Quartus/adder_subtractor_4bits/arithmetic.vhd
+l0
+L23 1
+Vc0LDb:BS;jz6^fKUK69nR0
+!s100 HUhZ:nh^`F=YU<4kdLM]W2
+R7
+31
+Z19 !s110 1601077417
+!i10b 1
+R9
+Z20 !s90 -reportprogress|300|-93|-work|work|E:/Faculdade/8Sem/Arquitetura 2/Projetos/Quartus/adder_subtractor_4bits/arithmetic.vhd|
+!s107 E:/Faculdade/8Sem/Arquitetura 2/Projetos/Quartus/adder_subtractor_4bits/arithmetic.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R2
+R15
+R16
+R3
+R4
+DEx4 work 10 arithmetic 0 22 c0LDb:BS;jz6^fKUK69nR0
+!i122 3
+l36
+L32 16
+VO11C:dcXzgHRl5lTGW1En0
+!s100 g1l::h;Ne?H<3Q]J1B4Oo2
+R7
+31
+R19
+!i10b 1
+R9
+R20
+Z21 !s107 E:/Faculdade/8Sem/Arquitetura 2/Projetos/Quartus/adder_subtractor_4bits/arithmetic.vhd|
+!i113 1
+R12
+R13
+Edisplay_7seg
+Z22 w1601077088
+R3
+R4
+!i122 0
+R0
+Z23 8E:/Faculdade/8Sem/Arquitetura 2/Projetos/Quartus/adder_subtractor_4bits/display_7seg.vhd
+Z24 FE:/Faculdade/8Sem/Arquitetura 2/Projetos/Quartus/adder_subtractor_4bits/display_7seg.vhd
+l0
+Z25 L21 1
+VD9=S_ZNk^PA_jOHzQ_61[2
+!s100 I0>8R_I[;hC3C_6^AJNZ:1
+R7
+31
+R8
+!i10b 1
+R9
+Z26 !s90 -reportprogress|300|-93|-work|work|E:/Faculdade/8Sem/Arquitetura 2/Projetos/Quartus/adder_subtractor_4bits/display_7seg.vhd|
+Z27 !s107 E:/Faculdade/8Sem/Arquitetura 2/Projetos/Quartus/adder_subtractor_4bits/display_7seg.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R3
+R4
+DEx4 work 12 display_7seg 0 22 D9=S_ZNk^PA_jOHzQ_61[2
+!i122 0
+l32
+L30 46
+VbekHoF[A;Y8FV>U1_Yd1F3
+!s100 45>lF?^1RQkn55=oL5egK2
+R7
+31
+R8
+!i10b 1
+R9
+R26
+R27
+!i113 1
+R12
+R13
+Ereg
+Z28 w1601077366
+R3
+R4
+!i122 1
+R0
+Z29 8E:/Faculdade/8Sem/Arquitetura 2/Projetos/Quartus/adder_subtractor_4bits/reg.vhd
+Z30 FE:/Faculdade/8Sem/Arquitetura 2/Projetos/Quartus/adder_subtractor_4bits/reg.vhd
+l0
+R25
+V3R]PYPa1HMzEa@1QIWEjO1
+!s100 Wj_NH5`JRU2U>6hC5[Y=?3
+R7
+31
+R8
+!i10b 1
+R9
+Z31 !s90 -reportprogress|300|-93|-work|work|E:/Faculdade/8Sem/Arquitetura 2/Projetos/Quartus/adder_subtractor_4bits/reg.vhd|
+Z32 !s107 E:/Faculdade/8Sem/Arquitetura 2/Projetos/Quartus/adder_subtractor_4bits/reg.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R3
+R4
+DEx4 work 3 reg 0 22 3R]PYPa1HMzEa@1QIWEjO1
+!i122 1
+l35
+L31 18
+V9KdKd4;H=Ll>W_mcZj>7[3
+!s100 P[NI>U[l6H52WOiC^4::E3
+R7
+31
+R8
+!i10b 1
+R9
+R31
+R32
+!i113 1
+R12
+R13

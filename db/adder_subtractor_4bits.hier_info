@@ -1,0 +1,28 @@
+|adder_subtractor_4bits
+clear => ~NO_FANOUT~
+clock => ~NO_FANOUT~
+disp[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+disp[1] <= disp[1].DB_MAX_OUTPUT_PORT_TYPE
+disp[2] <= disp[2].DB_MAX_OUTPUT_PORT_TYPE
+disp[3] <= disp[3].DB_MAX_OUTPUT_PORT_TYPE
+disp[4] <= disp[4].DB_MAX_OUTPUT_PORT_TYPE
+disp[5] <= disp[5].DB_MAX_OUTPUT_PORT_TYPE
+disp[6] <= disp[6].DB_MAX_OUTPUT_PORT_TYPE
+en1 => ~NO_FANOUT~
+en2 => ~NO_FANOUT~
+nums[0] => ~NO_FANOUT~
+nums[1] => ~NO_FANOUT~
+nums[2] => ~NO_FANOUT~
+nums[3] => ~NO_FANOUT~
+ope => ~NO_FANOUT~
+show_res => ~NO_FANOUT~
+num1[3] => ~NO_FANOUT~
+num1[2] => ~NO_FANOUT~
+num1[1] => ~NO_FANOUT~
+num1[0] => ~NO_FANOUT~
+num2[3] => ~NO_FANOUT~
+num2[2] => ~NO_FANOUT~
+num2[1] => ~NO_FANOUT~
+num2[0] => ~NO_FANOUT~
+
+
